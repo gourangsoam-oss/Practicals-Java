@@ -25,8 +25,7 @@ class Circle extends Shape {
 }
 
 class Rectangle extends Shape {
-    double length;
-    double width;
+    double length, width;
 
     Rectangle(String color, double length, double width) {
         super(color);
@@ -39,18 +38,17 @@ class Rectangle extends Shape {
     }
 }
 
-public class HierarchicalInheritance {
+public class Main {
     public static void main(String[] args) {
         Circle c = new Circle("Red", 5);
         Rectangle r = new Rectangle("Blue", 4, 6);
 
         System.out.println("Circle:");
-        c.displayColor(); // Inherited from Shape
+        c.displayColor();
         System.out.printf("Area: %.2f%n", c.area());
 
         System.out.println("\nRectangle:");
-        r.displayColor(); // Inherited from Shape
+        r.displayColor();
         System.out.printf("Area: %.2f%n", r.area());
     }
 }
-
